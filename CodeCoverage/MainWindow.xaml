@@ -1,0 +1,23 @@
+﻿<Window x:Class="CodeCoverage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CodeCoverage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="594">
+    <Grid Height="440" Margin="0,0,24,0">
+        <TextBox x:Name="textCaminho" HorizontalAlignment="Left" Margin="35,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="399"/>
+        <Label x:Name="labelCaminho" Content="Caminho da workspace (Ex.: C:\RTC\DEV\PG5_DEV)" HorizontalAlignment="Left" Margin="35,25,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="buttonCaminho" Content="..." HorizontalAlignment="Left" Margin="439,55,0,0" VerticalAlignment="Top" Width="23"/>
+        <Button x:Name="buttonExecutar" Content="Executar" HorizontalAlignment="Left" Margin="482,55,0,0" VerticalAlignment="Top" Width="70"/>
+        <Label x:Name="labelLista" Content="Lista de units (Ex.: uedtFuncoes)" HorizontalAlignment="Left" Margin="35,99,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkListaPadrao" Content="Usar lista de units padrão" HorizontalAlignment="Left" Margin="386,105,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textLista" HorizontalAlignment="Left" AcceptsReturn="True" VerticalScrollBarVisibility="Auto" Margin="35,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="427" Height="193"/>
+        <Button x:Name="buttonRelatorio" Content="Relatório" HorizontalAlignment="Left" Margin="482,303,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBlock x:Name="textObservacao" TextWrapping="WrapWithOverflow" HorizontalAlignment="Left" Margin="35,343,0,45" Width="517">
+            Observações: Após executar, deverá abrir a tela do DUnit (se estiver configurado no spCfg.ini). 
+            Nela, você deve escolher o teste que pretende executar.
+        </TextBlock>
+    </Grid>
+</Window>
