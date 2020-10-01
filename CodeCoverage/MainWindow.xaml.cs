@@ -203,7 +203,9 @@ namespace CodeCoverage
 
         private void EncerrarSistema(object sender, EventArgs e)
         {
-            arquivoJson.CaminhoWorkspace = textCaminho.Text.Trim();
+            if (arquivoJson.GravarUltimoWorkspace)
+              arquivoJson.CaminhoWorkspace = textCaminho.Text.Trim();
+
             GravarJson();
         }
     }
